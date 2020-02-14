@@ -1,4 +1,4 @@
-#include "./include/calculator.h"
+#include "calculator.h"
 #include<stdio.h>
 int main()
 {
