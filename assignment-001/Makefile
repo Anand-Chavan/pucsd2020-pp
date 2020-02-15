@@ -6,6 +6,9 @@ simple:
 static:
 	gcc -c main.c && gcc -o calculator  main.o  libbasic.a
 
+dynamic:
+	gcc -c main.c && gcc -o calculator main.o libbasic.so
+
 run :
 	./calculator
 

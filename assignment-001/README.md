@@ -14,5 +14,11 @@ File discrption :
 		3>Makefile : All essential for run the program
 
 Run :
-	make
+	make --option
+
+	--option ->
+		make simple : for run calculator simple calculator
+		make static : for run calculator for static library
+		make dynamic: for run calculator for dynamic library
+	
 	./calculator
