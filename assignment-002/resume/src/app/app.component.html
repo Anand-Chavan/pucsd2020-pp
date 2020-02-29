@@ -1,0 +1,34 @@
+<mat-card>
+
+        <img src='assets/MyLetter.png'><b style="font-size: 25px">Chavan Anand Jalindar</b>
+        <nav mat-tab-nav-bar>
+          <a mat-tab-link
+             *ngFor="let link of navNames"
+             [routerLink]="link" color='red'>
+
+            <b>{{link}}</b>
+          </a>
+        </nav>
+     
+    
+<!-- </mat-card>
+<mat-card> -->
+
+</mat-card>
+
+<footer>
+  <mat-card>
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link
+         *ngFor="let link of navLinks"
+         [routerLink]="link">
+        <b>{{link}}</b>
+      </a>
+    </nav>
+  </mat-card>
+
+</footer>
+
+
+
+<router-outlet></router-outlet>
