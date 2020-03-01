@@ -16,6 +16,7 @@ import { AssignmentInfoComponent } from './assignment-info/assignment-info.compo
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ImportanrLinkComponent } from './importanr-link/importanr-link.component';
 import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -28,7 +29,8 @@ import {MatCardModule} from '@angular/material/card';
     ProjectInfoComponent,
     AssignmentInfoComponent,
     AboutMeComponent,
-    ImportanrLinkComponent
+    ImportanrLinkComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

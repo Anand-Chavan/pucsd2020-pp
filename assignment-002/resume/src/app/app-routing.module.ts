@@ -9,17 +9,19 @@ import { AssignmentInfoComponent } from './assignment-info/assignment-info.compo
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ImportanrLinkComponent } from './importanr-link/importanr-link.component';
 import { TechnicalSkillComponent } from './technical-skill/technical-skill.component';
-
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-	// { path: '', component:AppComponent},
+	// { path: 'Home', component:AppComponent},
 	{ path: 'Personal', component:PersonalDetailComponent},
 	{ path: 'Educational', component:EducationalDetailsComponent},
 	{ path: 'Technical' , component :TechnicalSkillComponent},
 	{ path: 'Project' , component :ProjectInfoComponent},
 	{ path: 'Assignment' , component :AssignmentInfoComponent},
 	{ path: 'About' , component :AboutMeComponent},
-	{ path: 'Links' , component :ImportanrLinkComponent}
+	{ path: 'Links' , component :ImportanrLinkComponent},
+	// { path: 'Home' , component :HomeComponent},
+	{ path: '' , component :HomeComponent}
 ];
 
 @NgModule({

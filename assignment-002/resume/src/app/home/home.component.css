@@ -17,3 +17,10 @@ mat-card
 	border-width:0.5px;
 	/*border-radius: 50px;*/
 }
+
+img
+{
+   /*height: 50px;
+   width: 150px;*/
+   padding-left: 80px;
+}
