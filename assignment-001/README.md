@@ -1,6 +1,6 @@
 Assignment -001 
 
-Make a simple calculator using c 
+Make a simple calculator using c language
 
 File discrption :
 
