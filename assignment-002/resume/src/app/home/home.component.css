@@ -1,0 +1,26 @@
+
+div
+{
+	background-color:  rgb(204, 230, 255);
+	min-height:500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+mat-card
+{
+	background-color:rgb(204, 255, 204);
+	min-height:400px;
+	min-width: 800px;
+	border:solid;
+	border-width:0.5px;
+	/*border-radius: 50px;*/
+}
+
+img
+{
+   /*height: 50px;
+   width: 150px;*/
+   padding-left: 80px;
+}

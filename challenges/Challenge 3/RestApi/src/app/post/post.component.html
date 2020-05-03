@@ -1,0 +1,60 @@
+
+<div align="center">
+	<mat-card class="matcard"><b style="font-size: 20px;color: blue">Add User Detail</b></mat-card>
+</div>
+
+<form (submit)="getValue()">
+	<div align="center" style="padding: 10px">
+		<mat-card  class="post-card">
+			<div class="col">
+
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput class="input" [(ngModel)]="lname" name="lname" placeholder="Enter The First Name">
+					 </mat-form-field>
+				</div>
+					
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput [(ngModel)]="fname" name="fname" placeholder="Enter The Last Name">
+					 </mat-form-field>
+				</div>
+
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput [(ngModel)]="email" name="email" placeholder="Enter The Email Id">
+					 </mat-form-field>
+				</div>
+
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput [(ngModel)]="password" name="password" placeholder="Enter The Password">
+					 </mat-form-field>
+				</div>
+
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput [(ngModel)]="phoneNumber" name="phoneNumber" placeholder="Enter The Contact Number">
+					 </mat-form-field>
+				</div>
+
+				<div class="row-2">
+					<mat-form-field>
+					    <input matInput [(ngModel)]="updatedBy" name="updatedBy" placeholder="Updated by">
+					 </mat-form-field>
+				</div>	
+
+			</div>
+
+			<div class="row" >
+				<div class="col-6" style="padding: 15px">
+					<button mat-button class="get" type="reset">RESET</button>
+				</div>
+				<div class="col-6" style="padding: 15px">
+					<button mat-button class="get"  type="submit">SUBMIT</button>
+				</div>
+
+			</div>
+		</mat-card>
+	</div>
+</form>

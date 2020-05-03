@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.main_head_top
+{
+	padding: 10px;
+	color:rgb(66, 176, 245);
+}
+.main_head
+{
+	padding: 10px;
+	color:rgb(66, 176, 245);
+	font-size: 20px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
