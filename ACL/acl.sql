@@ -1,4 +1,5 @@
 CREATE DATABASE IF NOT EXIST acl;
+
 DROP TABLE  IF NOT EXIST users;
 DROP TABLE  IF NOT EXIST groups;
 DROP TABLE  IF NOT EXIST whoGroupCreated;
@@ -6,6 +7,11 @@ DROP TABLE  IF NOT EXIST userGroupMap;
 DROP TABLE IF NOT EXIST Content;
 DROP TABLE IF NOT EXIST permission;
 DROP TABLE  IF NOT EXIST session
+
+CREATE TABLE IF NOT EXISTS permission(
+ 	permissionValue varchar(20) PRIMARY KEY
+
+ );
 
 CREATE TABLE IF NOT EXIST users
 (
@@ -54,21 +60,30 @@ CREATE TABLE IF NOT EXIST userGroupMap
 
 
 
-CREATE TABLE IF NOT EXISTS permission(
- 	permissionId int PRIMARY KEY
-
- );
 
 
 CREATE TABLE IF NOT EXISTS content(
-	contentId int PRIMARY KEY
+	contentId int PRIMARY KEY,
 	contentName varchar(20),
 	contentInfo varchar(2)
 );
 
-CREATE TABLE IF NOT EXISTS accessList(
-	userId_groupId int PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS userPermission(
+	userId int PRIMARY KEY,
 	contentId int ,
-	FOREIGN KEY (contentId) REFERENCES content(contentId)
+	permissionValue varchar(20) PRIMARY KEY,
+	FOREIGN KEY (userId) REFERENCES user(userId),
+	FOREIGN KEY (contentId) REFERENCES content(contentId),
+	FOREIGN KEY (permissionValue) REFERENCES permission(permissionValue),
 );
+
+CREATE TABLE IF NOT EXISTS groupsPermission(
+	groupId int PRIMARY KEY,
+	contentId int ,
+	permissionValue varchar(20) PRIMARY KEY
+	FOREIGN KEY (groupId) REFERENCES groups(groupId),
+	FOREIGN KEY (contentId) REFERENCES content(contentId),
+	FOREIGN KEY (permissionValue) REFERENCES permission(permissionValue),
+);
+
 
